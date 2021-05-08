@@ -7,6 +7,64 @@
     --color-grey: #A5A5A5;
     --color-light-grey: #F7F7F7;
     --color-white: #FFFFFF;
-    
+    --font-raleway: "Raleway", sans-serif;
+    --font-open-sans: "Open Sans", sans-serif;
+}
 
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: var(--font-open-sans);
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  .container {
+    width: 1352px;
+    margin: 0 auto;
+  }
+  /* HEADER STYLES */
+
+  .header {
+    height: 70px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  }
+.header_container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo{
+    font-family: var(--font-raleway);
+    font-size: 2rem; /* 16px*2 */
+    font-weight: 300;
+    color:var(--color-primary) ;
+}
+.header__nav{
+    display: flex;
+}
+.nav__element{
+    padding: 0 26px;
+}
+
+.nav__element:last-child {
+    padding-right: 0;
+  }
+.nav__link{
+    color: var(--color-grey);
+    font-weight: 700;
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    padding: 28px 18px 22px;
+    border-bottom: 4px solid transparent;
+    letter-spacing: 0.1875rem;
+}
+.nav__link:hover{
+    color: black;
+    border-color: var(--color-primary);
 }
